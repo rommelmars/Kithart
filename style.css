@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: whitesmoke;
+    color: #10253a;
+}
+
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header{
+	position: fixed;
+    top: 0;
+	left: 0;
+	width: 100%;
+	padding: 3rem 10% 3rem 10%;
+	background: rgba(202, 208, 212, 0.4);
+	backdrop-filter: blur(3px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    z-index: 5;
+}
+
+
+
+
+.head_links a{
+    font-size: 1.7vw;
+    margin-left: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    color: #2e3636;
+    font-weight: 550;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.1em;
+
+}
+
+.head_links a.active {
+    color: #c44141; /* Color when active */
+    text-shadow: 2px 2px 4px rgba(67, 192, 161, 0.5);
+}
+
+.head_links a:hover{
+    color: brown;
+    text-shadow: 2px 2px 4px rgba(67, 192, 161, 0.5);
+}
+
+.logo{
+    font-size: 2.7vw;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 800; /* Bold weight */
+    color: #2e4156;
+    text-shadow: 4px 4px 4px #aaa;
+    animation: slideInLogo 1.5s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.1);
+    color: #1a2d42;
+    text-shadow: 2px 2px 4px rgba(67, 192, 161, 0.5);
+
+}
+
+.about-author{
+    width: 100vw;
+    height: 110vh;
+    background-color: #dbf2f8;
+    display: flex;
+    text-align: left;
+    position: relative;
+    
+  }
+
+  .profile-image{
+    width: 50%;
+  }
+
+  .profile-image img{
+    width: 33vw;
+    height: 66vh;
+    margin-top: 25vh;
+    border-radius: 50%;
+    transform: translateX(30%);
+
+  }
+
+  .author-text{
+    margin-top: 8vh;
+    width: 50%;
+    transform: translateX(-10%);
+  }
+
+  .about-author h2{
+    margin-top: 25vh;
+    font-size: 9vh;
+    text-shadow: 2px 2px 4px rgba(209, 213, 214, 0.7);
+    word-spacing: 0.2em;
+    animation: slideFromToph2 1s ease-in-out;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .about-author p{
+    margin-top: 3vh;
+    font-size: 3vh;
+    margin-right: 8rem;
+    text-align: left;
+  }
+
+  .author-but {
+    text-decoration: none;
+    margin-top: 4vh;
+    background-color: brown; /* Green background */
+    color: #eef6ff; /* White text */
+    padding: 10px 20px; /* Padding for button size */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Keeps it inline like a button */
+    text-align: center;
+    font-size: 1vw;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.2em;
+    font-weight: 250; /* Optional: makes the text bold */
+}
+
+.author-but:hover {
+    background-color: #ff1100; /* Darker green on hover */
+}
+
+  .hero {
+    background-image: url('bg-img.jpg'); /* Use the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.hero h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: #2e4156;
+    text-shadow: 2px 2px 4px rgba(68, 70, 67, 0.7);
+    margin-bottom: 1rem;
+    transform: translateX(50%);
+    animation: slideFromTop 1s ease-in-out;
+    
+}
+
+.hero-text{
+    font-size: 1.7em;
+    color: #08192e;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.4em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 0 20px;
+    transform: translateX(44.5%);
+    animation: slideFromRight 1.7s ease-in-out;
+    text-align: left;
+    
+}
+
+.about-book{
+    width: 100%;
+    height: 100vh;
+    background-image: url('bg-aboutbook.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #acd0fa;
+    display: flex;
+    
+}
+
+.book-text{
+    text-align: center;
+    width: 100%;
+    font-size: 1.7em;
+    margin-top: 12vh;
+    padding: 15px;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 5px rgba(89, 23, 212, 0.2);
+    color: whitesmoke;
+
+}
+
+.book-text h2{
+    margin-top: 10vh;
+    font-size: 2.5em;
+    font-family: 'Playfair Display', serif;
+}
+
+.book-text p{
+    margin-top: 3.5vh;
+    font-size: 1em;
+    text-align: justify;
+    width: 40vw;
+    margin-left: 12%;
+}
+
+
+
+.book-mockup{
+    margin-top: 12vh;
+    width: 100%;
+}
+
+.book-mockup img{
+    margin-top: 5vh;
+    margin-left: 3vw;
+    width: 77%;
+    height: auto;
+    box-shadow: 5px 40px 80px rgba(29, 28, 28, 0.1);
+}
+
+/* Keyframes for animations */
+
+@keyframes slideInLogo {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slideFromTop {
+    0% {
+        transform: translate(50%, -50px); /* Start above */
+        opacity: 0;
+    }
+    100% {
+        transform: translate(50%,0); /* End at the original position */
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight { /*hero-text p*/
+    0% {
+        transform: translateX(60%); /* Start to the right */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(44.5%); /* End at the original position */
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #e05721;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+footer a:hover {
+    color: #3498db;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #1da1f2; /* Blue for Twitter */
+}
+
+footer .social-icons .fa-facebook:hover {
+    color: #3b5998; /* Facebook color */
+}
+
+footer .social-icons .fa-youtube:hover {
+    color: #3b20b4; /* YouTube color */
+}
+
+
+
+
+
